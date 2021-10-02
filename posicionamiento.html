@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        article{
+            border: 1px solid red;
+            margin-bottom: 100px;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border: 1px solid blue;
+            line-height: 200px;
+            text-align: center;
+        }
+
+        /*Despliegue en bloque*/
+        .bloque div{
+            display: block;/*Elemento en bloque*/
+        }
+        .enlinea div{
+            /*display: inline;/*Elementos lineales sin respetar alto y ancho*/
+            display: inline-block;/*Respete en alto y ancho lineal respetando la distancia*/
+        }
+        .entabla div{
+            display: table-cell;/*Respeta el alto y ancho y los junta como tabla*/
+        }
+        #relativo{
+            position: relative;
+            left: 300px;
+        }
+        #absoluto{
+            position: absolute;
+            right: 50px;
+        }
+        #fijo{
+            position: fixed;
+            background: blue;
+            right: 100px;
+            top: -30px;
+            
+        }
+        .flotante{
+            width: 100%;
+            height: 400px;
+        }
+        .flotante div{
+            float: left;
+        }
+        .flotante div:nth-child(2){
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>ELEMENTOS EN BLOQUE</h1>
+    <article class="bloque">
+    <div>UNO</div>
+    <div>DOS</div>
+    <div>TRES</div>
+    <div>CUATRO</div>
+    </article>
+
+    <h1>ELEMENTOS EN LINEA </h1>
+    <article class="enlinea">
+    <div>UNO</div>
+    <div>DOS</div>
+    <div>TRES</div>
+    <div>CUATRO</div>
+    </article>
+
+    <h1>ELEMENTOS EN TABLA</h1>
+    <article class="entabla">
+    <div>UNO</div>
+    <div>DOS</div>
+    <div>TRES</div>
+    <div>CUATRO</div>
+    </article>
+
+    <h1>ELEMENTOS EN POSICIONAMIENTO</h1>
+    <article>
+    <div id="relativo">RELATIVO</div>
+    <div id="absoluto">ABSOLUTO</div>
+    <div id="fijo">FIJO</div>
+    </article>
+
+    <h1>POSICIONAMIENTO FLOTANTE</h1>
+    <article class="flotante">
+    <div>PRIMERO</div>
+    <div>SEGUNDO</div>
+    <div>TERCERO</div>
+    </article>
+
+
+
+</body>
+</html>

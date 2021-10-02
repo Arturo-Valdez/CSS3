@@ -1,0 +1,19 @@
+.grid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.grid .elemento{
+    background: #8a3bb5;
+
+  /*Inicia, la numeracion del grid 1 al 6* permitiendo moverse de pocicion al numero en columnas*/
+  /*grid-column-start: 1;   
+  grid-column-end: 6;
+    /*Inicia, la numeracion del grid 1 al 3* permitiendo moverse de pocicion al numero en hileras*/
+  /*grid-row-start: 1;
+  grid-row-end: 4;*/
+    /*ATAJO voy a iniciar en la columna n0.3 y quiero terminar en la columna 5*/
+  grid-column: 3 / 5;
+  grid-row: 1 / 3;
+}

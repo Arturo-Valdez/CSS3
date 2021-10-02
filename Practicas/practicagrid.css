@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #000;/*Color de texto o contenido*/
+    background: #e9ecf4;/*Color de la caja*/
+}
+
+.grid{
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;/*Alto y y base de 30px y de los lados automatico centrado*/
+    display: grid;/*Inicio de metodo grid*/
+    grid-gap: 20px;/*Separacion entre cada caja de grid*/
+    grid-template-columns: repeat(3, 1fr);/*3 columnas de 1 fraccion*/
+    grid-template-rows: repeat(4, auto) ;/*4 ileras de automatico*/
+
+    grid-template-areas: "header     header     header"/*Grid area en el cual estaran acomodados las cajas de grid*/
+                         "contenido  contenido  sidebar"
+                         "widget1    widget2    sidebar"
+                         "footer     footer     footer";
+}
+.grid div,
+.grid header,
+.grid aside,
+.grid footer{
+    background: #fff;/*caja color*/
+    padding: 20px;
+}
+.grid header{
+    background: #383f4d;/*caja color*/
+    color: #fff;/*Color de texto o contenido*/
+    grid-area: header;/*Tomara el nombre de */
+    
+}
+.grid .contenido{
+    grid-area: contenido;/*Tomara el nombre de */
+}
+.grid aside{
+    background: #af5fdd;/*caja color*/
+    color: #fff;/*Color de texto o contenido*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: sidebar;/*Tomara el nombre de */
+    
+}
+.grid .widget{
+    background: #1aa9ed;/*caja color*/
+    color:#fff;/*Color de texto o contenido*/
+    height: 100px;
+    display: flex;/*Caja flexible*/
+    justify-content: center;/*centrar el contenido*/
+    align-items: center;/*Centrar los items o contenido */
+}
+.grid .w1{
+    grid-area: widget1;/*Tomara el nombre de */
+}
+.grid .w2{
+    grid-area: widget2;/*Tomara el nombre de */
+}
+.grid footer{
+    background: #000;/*caja color*/
+    color: #fff;/*Color de texto o contenido*/
+    grid-area: footer;/*Tomara el nombre de */
+}
+@media screen and (max-width: 700px){/*Al llegar al minimo de anchor de 700px cambie las areas*/
+    .grid{
+        grid-template-areas: "header     header     header"
+                             "contenido  contenido  contenido"
+                             "sidebar    sidebar    sidebar"
+                             "widget1    widget1    widget2"
+                             "footer     footer     footer";
+    }
+}

@@ -1,0 +1,38 @@
+.grid{
+    display: grid;
+    grid-gap: 20px;/**Ver un espacio*/
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: repeat(4, auto);/*repite 4 columnas y que sean automaticas*/
+    grid-template-areas: "header header header"
+                          "sidebar contenido sidebar1"
+                          "sidebar widget sidebar1"
+                          "footer footer footer";/*Creara la primera columna en header la segunda y tercera*/
+}
+
+.grid .header{
+    background: #ff8000;
+    grid-column-start: header;
+    grid-column-end: header;
+}
+.grid .sidebar{
+    background: #00db54;
+    grid-column: sidebar;
+    grid-row: sidebar;
+}
+.grid .contenido{
+    background: #dedede;
+    color: #745656;
+    grid-area: contenido;
+}
+.grid .sidebar1{
+    background: #00db54;
+    grid-area: sidebar1;
+}
+.grid .widget{
+    background: #ff8000;
+    grid-area: widget;
+}
+.grid .footer{
+    background: #222831;
+    grid-area: footer;
+}

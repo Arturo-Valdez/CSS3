@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones CSS3</title>
+    <style>
+       
+
+        /*Paso 1 KEY FRAME es la pelicula*/
+        @keyframes cambiarcolor {/*Cambiara de color a cada porciento que llegue*/
+            0%{
+                background: green;
+            }
+            20%{
+                background: blue;
+            }
+            40%{
+                background: orange;
+            }
+            60%{
+                background: yellow;
+            }
+            80%{
+                background: purple;
+            }
+            100%{
+                background: red;
+            }
+        }
+        /*Paso 2 APLICAR PROPIEDADES DE ANIMACION*/
+
+        .ani{
+            width: 400px;
+            height: 400px;
+            background: gray;
+            margin: auto;
+            margin-top: 50px;
+            /*Propiedades de animacion*/
+            animation-name: cambiarcolor;/*Agregar el nombre de la animacion*/
+            animation-duration: 10s;/*Duracion del muestreo*/
+            animation-delay: 0.5s;/*Retraso*/
+            animation-iteration-count: 2;/*Cantidad de veces haga la interaccion*/
+            animation-direction: normal;/*Direccion en la que se mostrara de 0 a 100 o de 100 a 0*/
+            animation-fill-mode: forwards;/*Muestra que cuando inicia y termina en el primer color que es el gris*/
+            animation-play-state: paused;/*Iniciar pausada la animacion*/
+
+            /*ATAJO*/
+            animation: cambiarcolor 10s 0.5 2 normal forwards paused;
+        }
+        .ani:hover{
+            animation-play-state: running;/*Cuando pase mi cursor empieza a correr*/
+        }
+    </style>
+</head>
+<body>
+    <div class="ani"></div>
+</body>
+</html>

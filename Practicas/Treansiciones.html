@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANCICIONES CSS</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 70px;
+            float: left;
+        }
+        .elemento1{
+            background: #1aa9ed;
+        }
+        .elemento1:hover{
+            transform: rotate(130deg);
+            background: blue;
+        }
+        .elemento-transicion{
+            background: #00dd73;
+            transition-property: all;/*todas las propiedades cambiaran al mismo tiempo*/
+            transition-duration: 1s;/*Tiempo de cambio 1 segundo*/
+            transition-delay: 1s;/*Retraso de 1 segundo cuando el cursor este en su area*/
+            transition-timing-function: ease;/*velocidad estandar inicia lento y aumenta velocidad*/
+
+            /*ATAJO - PROPIEDAD - DURACION - TIMING*/
+            transition: all 1s ease-out 0.3s;/*afectar todas las propiedades, duraras 1 segundo, a traves de un
+            ease-out que es la velocidad normal pero termina lento y tendra un delay que tardara 0.3s */
+
+        }
+
+        .elemento-transicion:hover{
+            background: green;
+            transform: rotate(130deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="elemento1"></div>
+
+    <div class="elemento-transicion"></div>
+</body>
+</html>

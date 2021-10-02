@@ -1,0 +1,8 @@
+.grid{
+    display: grid;/*Mandar a llamar grid*/
+    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;/*Hace columnas de tanto tamaño que es mejor fracciones*/
+    /*grid-template-columns: repeat(6,1fr);/*Hacer 6 columnas de 1 fraccion*/
+    grid-template-columns: 300px repeat(3,1fr);/*Hacer una columna de 300px y 3 de 1 fraccion pero si se reduce la caja solo la de 300px se quedara en su estado original*/
+    /*grid-template-rows: 1fr 2fr;/*Hace filas*/
+    grid-gap: 20px;/*Da un espaciado entre las cajas/elemento*/
+}

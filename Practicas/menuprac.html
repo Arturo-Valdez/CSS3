@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu CSS3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Mukta', sans-serif;
+        }
+        header{
+            display: flex;/*Elementos flexibles*/
+            justify-content: space-around;/*Da una aliniacion que de alineacion*/
+            align-items: center;/*Dar alineacion en el eje central*/
+            padding: 0px 0px;/**/
+            border-bottom: 1px solid #dedede;/*Hace una linea bajo de las listas y de la imagen*/
+            margin-bottom: 100px;
+        }
+        li{/*Hace que las listas aparescan de un aldo a otro y eliminando informacion de mas como el punto y la raya*/
+            display: inline-block;/*Hace que se pongan de izquierda a derecha las listas*/
+            padding: 20px;/*Separacion de elementos lista*/
+            list-style: none;/*Elimina el puntito del lado izquierdo de las listas*/
+        }
+        a{
+            font-size: 14px;/*Da un tamano de letra a 14px*/
+            text-decoration: none;/*Elimina el subrayado del enlace*/
+            text-transform: uppercase;/*Vuelve todo el texto en mayusculas*/
+            font-weight: 900;/*Dar negrillas*/
+            color: #4a3866;
+            transform: all 0.3s;
+        }
+        a:hover{/*Hace un cambio de color al pasar el raton ensima de las letras*/
+            color: #bd65a2;
+        }
+        .logo{
+            width: 100px;/*Acomoda toda la informacion de la clase logo en 100px*/
+            cursor: pointer;/*Da al raton la manita para click*/
+        }
+        .btn{
+            background-color: #ff2753;
+            color: white;
+            padding: 10px 25px;/*Dar mas amplitun 10px de alto y bajo y 20 px de los lados*/
+            border-radius: 50px;/*Eliminar los bordes y hacerlo circular con 50px*/
+        }
+        .btn:hover{
+            background-color: #f54cbc;
+            color: white;;
+        }
+        /*Menu 2*/
+        .menu2{
+            padding: 10px 5%;/*10px arriba y abajo, 5% le da espacio a los lados de las esquinas*/
+        }
+        .menu2 .logo{
+            margin-right: auto;/*Separa la clase menu2 de logo el menu a la derecha y el logo a la izquierda*/
+        }
+        .menu2 .btn{
+            margin-left: 25px;
+        }
+        /*MENU 3*/
+        .menu3 .logo{
+            order: 2;/*Ordenar las pocisiones*/
+        }
+        .menu3 nav{
+            order: 1;/*Ordenar las pocisiones*/
+        }
+        .menu3 .btn{
+            order: 0;/*Ordenar las pocisiones*/
+        }
+    </style>
+</head>
+<body>
+    <header><!--Caja flexible-->
+        <img src="../Archivos/logo.PNG" alt="" class="logo">
+        <nav><!--etiqueta nav para hacer las etiquetas de navegacion-->
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=4hQi20Py5Og" >Nosotros</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Portafolio</a></li>
+                <li><a href="">Multimedia</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="" class="btn">Login</a>
+    </header>
+
+    <header class="menu2"><!--Caja flexible-->
+        <img src="../Archivos/logo.PNG" alt="" class="logo">
+        <nav><!--etiqueta nav para hacer las etiquetas de navegacion-->
+            <ul>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Portafolio</a></li>
+                <li><a href="">Multimedia</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="" class="btn">Login</a>
+    </header>
+
+    <header class="menu3"><!--Caja flexible-->
+        <img src="../Archivos/logo.PNG" alt="" class="logo">
+        <nav><!--etiqueta nav para hacer las etiquetas de navegacion-->
+            <ul>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Portafolio</a></li>
+                <li><a href="">Multimedia</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="" class="btn">Login</a>
+    </header>
+</body>
+</html>

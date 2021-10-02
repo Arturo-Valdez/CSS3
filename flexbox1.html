@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox 1 CSS</title>
+    <style>
+        .contenedor{
+            width: 23%;
+            height: 400px;
+            background-color: #dedede;
+            float: left;/*Flotar a la izquierda para que sean consecutivos*/
+            margin: 10px;
+
+            /*Declarar flexbox*/
+            display: flex; /*ordena los items en la parte de arriba*/
+        }
+        .items{
+            background: lightblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 22px;
+        }
+        /*DIRECCION FLEXBOX*/
+        .c1{
+            /*flex-direction: column;
+            /*flex-wrap: wrap;/*Sirve cuando el item que se enciuentra desbordado de su caja salte al otro lado tomando una posicion vertical*/
+            flex-flow: column wrap;/*comando que disminuye codigo de direccion flexbox*/
+        }
+        .c2{
+            flex-flow: column-reverse wrap-reverse;/*Invierte los numeros o posiciones de abajo a riba*/
+        }
+        .c3{
+            flex-flow: row wrap ;/*row sirve para darle su espacio a cada item y que se coloque de arriba*/
+        }
+        .c4{
+            flex-flow: row-reverse wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor c1">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+    </div>
+    <div class="contenedor c2">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+    </div>
+    <div class="contenedor c3">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+    </div>
+    <div class="contenedor c4">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+    </div>
+</body>
+</html>

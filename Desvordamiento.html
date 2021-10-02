@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desbordamiento</title>
+    <style>
+        p{
+            margin: 0;
+        }
+        #desbordamiento{
+            width: 500px;
+            height: 500px;
+            background-color: rgb(241, 241, 81);
+
+            /*Desbordamiento*/
+            overflow: auto;/*Esto permite  que cuando la caja es mas pequeña que la info, este solo mustre la informacion que cubra la caja*/
+            /*Cuando se quiere ver la informacion con esa caja se agrega scroll para que te ponga una barra de movimiento*/
+            /*Cuando no se sabe cuanta informacion alla de agregar se agrega auto, auto permite mostrar el scroll si es necesario sino, no lo muestra*/
+        }
+        #despliegue{
+            color: blue;
+            column-count: 3;/*Divide el texto en columnas*/
+            column-gap: 5em;/*Utilizar el espacio de las columnas dejando espacio*/
+            column-rule: 5px dotted black;/*Crea una linea divisoria*/
+        }
+    </style>
+</head>
+<body>
+    <div id="desbordamiento">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga reiciendis perspiciatis ducimus hic, ratione, quia optio deserunt aspernatur dolore quis dolorem at distinctio dolor, dicta porro vitae obcaecati vero saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi et in pariatur enim corporis maxime commodi nemo dolorem, obcaecati aspernatur vel, est quam! Sint iusto nam temporibus alias sunt. Perspiciatis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic consequatur alias esse ad illo dolore soluta aperiam voluptates, obcaecati fugit, eligendi sed? Iste, ullam ex velit dolores temporibus consectetur? Aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat suscipit repellat ea amet ipsa mollitia veritatis recusandae quos. Voluptatem alias quo fugiat modi esse ab molestiae vero est unde ipsa?</p>
+    </div>
+    <br><br><hr>
+    <div id="despliegue">
+        
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro assumenda veritatis qui? Doloribus quidem odit omnis distinctio accusamus cum maiores hic nulla iure rem, cumque molestiae est enim, voluptatem exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, excepturi esse! Nihil doloribus nam ipsa repellendus provident exercitationem odio laborum. Ad fugiat voluptatem ea quibusdam! Exercitationem laboriosam aliquid beatae accusamus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sed temporibus nesciunt. Autem qui est minus delectus accusantium. Amet magnam consequatur adipisci totam dolore eos similique nulla obcaecati doloremque quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, aliquid quod facilis in dolores officiis, voluptatibus sint commodi officia iste nam recusandae illum repellat minima similique laudantium assumenda dolore nostrum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique assumenda voluptates id quod enim molestias! Porro eaque accusamus laudantium placeat veniam nisi qui nesciunt neque fugiat! Amet vero ratione eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur sint atque reiciendis saepe enim in dolorem eligendi autem quisquam voluptatem neque non alias totam quam deserunt similique, necessitatibus nisi nemo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur ipsam incidunt rerum, recusandae minima. Cupiditate nesciunt quisquam, repellat autem, odit tenetur accusantium accusamus quos excepturi dicta architecto placeat ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iste alias in voluptas libero qui accusamus tempora labore, necessitatibus eos veniam porro officia quaerat maxime? Molestias doloribus nemo odio impedit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente, enim minus minima, suscipit inventore natus modi fuga adipisci eaque laboriosam accusamus sequi nemo corrupti. Aliquam ad reiciendis magnam nemo assumenda? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis tenetur explicabo a facere reprehenderit cumque! Doloribus asperiores voluptatem quibusdam quaerat sunt nesciunt, labore, natus harum saepe a quis quas voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum maiores ex temporibus, eligendi ipsum aut error excepturi ab cum. Optio exercitationem vitae officiis labore eius suscipit sequi consequuntur fugit? Est. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis architecto doloribus aperiam, eveniet quos atque ad hic amet cupiditate mollitia rem velit? Velit dolor, porro iusto eveniet eum laborum quas!</p>
+    </div>
+
+</body>
+</html>
